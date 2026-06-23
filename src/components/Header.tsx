@@ -93,9 +93,7 @@ export default function Header() {
           )}
 
           {/* Privy Session handler */}
-          {!ready ? (
-            <div className="h-10 w-24 bg-white/5 rounded-xl animate-pulse" />
-          ) : authenticated ? (
+          {!ready ? null : authenticated ? (
             <div className="flex items-center gap-2">
               <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-3 py-2 rounded-xl text-xs sm:text-sm font-medium text-white max-w-[120px] sm:max-w-[160px]">
                 <User className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-accent-indigo shrink-0" />

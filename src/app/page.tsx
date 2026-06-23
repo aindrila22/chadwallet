@@ -732,17 +732,17 @@ export default function LandingPage() {
               <div className="flex flex-col gap-3">
                 {MOCK_LEADERBOARD.map((item) => (
                   <div key={item.rank} className="flex items-center justify-between p-3.5 bg-white/5 rounded-2xl border border-white/5 hover:border-accent-indigo/20 hover:bg-white/8 transition-all duration-300">
-                    <div className="flex items-center gap-3">
-                      <span className={`w-6 h-6 flex items-center justify-center text-xs font-bold font-mono rounded-full ${item.rank === 1 ? 'bg-yellow-500/20 text-yellow-500' :
+                    <div className="flex items-center gap-2 sm:gap-3 min-w-0 flex-1">
+                      <span className={`shrink-0 w-6 h-6 flex items-center justify-center text-xs font-bold font-mono rounded-full ${item.rank === 1 ? 'bg-yellow-500/20 text-yellow-500' :
                         item.rank === 2 ? 'bg-slate-300/20 text-slate-300' :
                           item.rank === 3 ? 'bg-amber-700/20 text-amber-700' : 'bg-white/5 text-gray-400'
                         }`}>
                         {item.rank}
                       </span>
-                      <span className="text-lg">{item.avatar}</span>
-                      <span className="text-sm font-bold text-gray-200 group-hover:text-white transition-colors">{item.name}</span>
+                      <span className="text-base sm:text-lg shrink-0">{item.avatar}</span>
+                      <span className="text-xs sm:text-sm font-bold text-gray-200 group-hover:text-white transition-colors truncate min-w-0 flex-1">{item.name}</span>
                     </div>
-                    <div className="text-right">
+                    <div className="text-right shrink-0 ml-2">
                       <div className="text-accent-emerald text-sm font-extrabold font-mono">{item.pnl}</div>
                       <div className="text-[10px] text-gray-400 font-mono">Vol: {item.volume}</div>
                     </div>
