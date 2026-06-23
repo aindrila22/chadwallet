@@ -710,7 +710,7 @@ export default function LandingPage() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Card 1: Leaderboard */}
-          <div className="glass-panel glass-panel-hover p-8 rounded-[36px] flex flex-col gap-6 h-[480px] hover:border-accent-indigo/35 transition-all relative overflow-hidden group shadow-lg">
+          <div className="glass-panel glass-panel-hover p-8 rounded-[36px] flex flex-col gap-6 h-auto lg:h-[480px] min-h-[480px] hover:border-accent-indigo/35 transition-all relative overflow-hidden group shadow-lg">
             {/* Corner blur light */}
             <div className="absolute top-0 right-0 w-24 h-24 bg-accent-indigo/10 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
 
@@ -756,7 +756,7 @@ export default function LandingPage() {
           </div>
 
           {/* Card 2: Live Trade Feed */}
-          <div className="glass-panel glass-panel-hover p-8 rounded-[36px] flex flex-col gap-6 h-[480px] hover:border-accent-purple/35 transition-all relative overflow-hidden group shadow-lg">
+          <div className="glass-panel glass-panel-hover p-8 rounded-[36px] flex flex-col gap-6 h-auto lg:h-[480px] min-h-[480px] hover:border-accent-purple/35 transition-all relative overflow-hidden group shadow-lg">
             <div className="absolute top-0 right-0 w-24 h-24 bg-accent-purple/10 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
 
             <div className="flex items-center justify-between">
@@ -803,7 +803,7 @@ export default function LandingPage() {
           </div>
 
           {/* Card 3: Push Notifications & Zero Complexity */}
-          <div className="glass-panel glass-panel-hover p-8 rounded-[36px] flex flex-col gap-6 h-[480px] hover:border-accent-pink/35 transition-all relative overflow-hidden group shadow-lg">
+          <div className="glass-panel glass-panel-hover p-8 rounded-[36px] flex flex-col gap-6 h-auto lg:h-[480px] min-h-[480px] hover:border-accent-pink/35 transition-all relative overflow-hidden group shadow-lg">
             <div className="absolute top-0 right-0 w-24 h-24 bg-accent-pink/10 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
 
             <div className="flex items-center justify-between">
